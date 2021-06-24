@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Portugais</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href=assets/css/bootstrap.css>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+  $('.template-article img').each(function() {
+      var currentImage = $(this);
+      currentImage.wrap("<a class='image-link' href='" + currentImage.attr("src") + "'</a>");
+  });
+  $('.image-link').magnificPopup({type:'image'});  
+});
+  </script>
+</head>
+<body>
+<header>
+  <nav class="navbar pt-4 pb-4 navbar-custom navbar-expand-md navbar-dark bg-dark static-top">
+    <a class="navbar-brand" href="#">Portugal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto navbar-nav-custom">
+            <li class="nav-item">
+                <a class="nav-link text-white nav-link-custom" href="../Welcome/index.html">Welcome</a>
+            </li>
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link text-white nav-link-custom " href="#menu">Menu</a>
+            </li>
+            <li class="nav-item nav-item-custom">
+              <a class="nav-link text-white nav-link-custom" href="../Galerie/index.html">Galerie</a>
+          </li>  
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link text-white nav-link-custom" href="../Restaurant/index.html">Restaurant</a>
+            </li>  
+            <li class="nav-item nav-item-custom">
+                <a class="nav-link text-white nav-link-custom" href="../Conctact/index.html">Contact</a>
+            </li>  
+        </ul>
+</nav>
+</header>
+
+
+<!--MENU*/-->
+
+<h1>MENU</h1>
+<section id="menu" class="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>Consultez notre savoureux <span>menu:</span></h2>
+      </div>
+
+    <div class="row" id="coldStarters">
+        <div class="col-12 d-flex justify-content-center">
+            <h3>Entrées Froides</h3>
+        </div>
+    </div>
+
+    <div class="row menu-container">
+
+        <div class="col-lg-6">
+            <div class="menu-portuguese">
+              <div class="myDIV2"><h6 class="left">Couvert tradicional</h6><span class="right badge">€4.00</span>
+                <p class="menu-french">Couvert traditionnel</p></div>
+              <div class="hidevisible">(pain, beurre, pâtés, olives et petits fromages)</div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="menu-portuguese">
+            <div class="myDIV"><h6 class="left">Salada de polvo</h6><span class="right badge">€15.00</span>
+              <p class="menu-french">Salade de poulpe</p></div>
+            <div class="hide">(mélange de poulpe, oignon, huile, vinaigre et coriandre)</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="menu-portuguese">
+            <div class="myDIV"><h6 class="left">Salada de orelha de porco</h6><span class="right badge">€10.00</span>
+              <p class="menu-french">Salade d'oreilles de porc</p></div>
+            <div class="hide">(mélange d'oreilles de porc avec ail, oignon, huile, vinaigre et coriandre)</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="menu-portuguese">
+            <div class="myDIV"><h6 class="left">Queijo da Serra da Estrela</h6><span class="right badge">€20.00</span>
+              <p class="menu-french">Fromage "Serra da Estrela"</p></div>
+            <div class="hide">(fromage "Serra da Estrela" avec confiture maison et toasts)</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="menu-portuguese">
+            <div class="myDIV"><h6 class="left">Pastéis de bacalhau</h6><span class="right badge">€6.00</span>
+              <p class="menu-french">Beignets de morue</p></div>
+            <div class="hide">(mélange de morue, pommes de terre, oeufs et persil frite)</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="menu-portuguese">
+            <div class="myDIV"><h6 class="left">Torresmos</h6><span class="right badge">€6.00</span>
+              <p class="menu-french">Couennes de porc croustillantes</p></div>
+            <div class="hide">(poitrine de porc coupée en cubes et frite)</div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="row" id="hotStarters">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <h3>Entrées Chaudes</h3>
+        </div>
+    </div>
+
+    <div class="row menu-container">
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Chouriça assada</h6><span class="right badge">€6.00</span>
+            <p class="menu-french">Chorizo rôti</p></div>
+          <div class="hide">(chorizo ​​​​grillé dans un petit "assador" d'argile traditionnel)</div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Amêijoas à Bulhão Pato</h6><span class="right badge">€16.00</span>
+            <p class="menu-french">Palourdes à la "Bulhão Pato"</p></div>
+          <div class="hide">(palourdes avec ail, oignon, huile d'olive, vin blanc et coriandre)</div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Camarão ao alho</h6><span class="right badge">€18.00</span>
+            <p class="menu-french">Crevettes à l'ail</p></div>
+          <div class="hide">(crevettes frites avec ail, huile d'olive, coriandre et citron)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Moelas</h6><span class="right badge">€10.00</span>
+            <p class="menu-french">Gésiers</p></div>
+          <div class="hide">(gésiers de poulet mijotés au vin et aux épices)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Pica-pau à portuguesa</h6><span class="right badge">€11.00</span>
+            <p class="menu-french">"Pica-pau" à la portugaise</p></div>
+          <div class="hide">(lanières de porc sautées au vin rouge et à l'ail avec des pickles)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Choco Frito à moda de Setúbal</h6><span class="right badge">€15.00</span>
+            <p class="menu-french">Seiches frites façon Setúbalaise</p></div>
+          <div class="hide">(lanières de seiche panées et frites au citron)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="soupes">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <h3>Soupes</h3>
+        </div>
+    </div>
+
+    <div class="row menu-container">
+
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Caldo Verde</h6><span class="right badge">€5.00</span>
+            <p class="menu-french">Soupe Verte</p></div>
+          <div class="hide">(soupe de pommes de terre et chou vert aux tranches de chorizo)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Creme de Cenoura</h6><span class="right badge">€4.00</span>
+            <p class="menu-french">Crème de carottes</p></div>
+          <div class="hide">(soupe de carottes crémeuse)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Açorda de marisco</h6><span class="right badge">€12.00</span>
+            <p class="menu-french">Soupe de fruits de mer</p></div>
+          <div class="hide">(soupe de pain aux fruits de mer et coriandre)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Sopa da pedra</h6><span class="right badge">€9.00</span>
+            <p class="menu-french">Soupe de pierre</p></div>
+          <div class="hide">(soupe avec diverses viandes, saucisses, haricots, légumes et pâtes.)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="viandes">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <h3>Viandes</h3>
+        </div>
+    </div>
+      
+    <div class="row menu-container">
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Cozido à Portuguesa</h6><span class="right badge">€20.00</span>
+            <p class="menu-french">Ragoût à la portugaise</p></div>
+          <div class="hide">(ragoût traditionnel avec des saucisses, des légumes et diverses viandes, servi avec du riz et des pommes de terre)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Leitão à Bairrada</h6><span class="right badge">€28.00</span>
+            <p class="menu-french">Porcelet façon Bairradaise</p></div>
+          <div class="hide">(cochon de lait rôti lentement au four à bois avec assaisonnement traditionnel)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Cabidela de galinha</h6><span class="right badge">€14.00</span>
+            <p class="menu-french">"Cabidela" de poule</p></div>
+          <div class="hide">(poule et riz mijotés avec du vin et du sang)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Francesinha</h6><span class="right badge">€12.00</span>
+            <p class="menu-french">Petite dame française</p></div>
+          <div class="hide">(sandwich au jambon, steak et saucisses diverses, gratiné au fromage et arrosé d'une sauce traditionnelle. Servi avec des frites)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Feijoada</h6><span class="right badge">€18.00</span>
+            <p class="menu-french">"Feijoada"</p></div>
+          <div class="hide">(ragoût avec diverses parties de porc, légumes et haricots servis avec du riz)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Cabrito à padeiro</h6><span class="right badge">€26.00</span>
+            <p class="menu-french">Petite chèvre au boulanger</p></div>
+          <div class="hide">(petite chèvre au four à bois avec des petites pommes de terre)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="poisson">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <h3>Poisson</h3>
+        </div>
+      </div>
+      
+    <div class="row menu-container">
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Sardinha assada</h6><span class="right badge">€20.00</span>
+            <p class="menu-french">Sardines grillées</p></div>
+          <div class="hide">(sardines grillées avec pommes de terre et poivrons)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Polvo à Lagareiro</h6><span class="right badge">€28.00</span>
+            <p class="menu-french">Poulpe à la Lagareiro</p></div>
+          <div class="hide">(poulpe au four avec pommes de terre, ail et huile d'olive)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Bacalhau à brás</h6><span class="right badge">€15.00</span>
+            <p class="menu-french">Morue à la brás</p></div>
+          <div class="hide">(lanières de morue aux oignons, pommes paille, œufs et huile d'olive)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Caldeirada de peixe</h6><span class="right badge">€23.00</span>
+            <p class="menu-french">Ragoût de poisson</p></div>
+          <div class="hide">(ragoût de poisson, légumes et pommes de terre au vin blanc)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="fruitsDeMer">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <h3>Fruits de mer</h3>
+        </div>
+    </div>
+      
+    <div class="row menu-container">
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Cataplana de marisco</h6><span class="right badge">€40.00</span>
+            <p class="menu-french">"Cataplana" de fruits de mer</p></div>
+          <div class="hide">(fruits de mer, oignons, poivrons et pommes de terre mijotés dans une "cataplana")</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Arroz de marisco</h6><span class="right badge">€35.00</span>
+            <p class="menu-french">Riz aux fruits de mer</p></div>
+          <div class="hide">(poulpe au four avec pommes de terre, ail et huile d'olive)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Camarão tigre grelhado</h6><span class="right badge">€30.00</span>
+            <p class="menu-french">Crevettes tigrées grillées</p></div>
+          <div class="hide">(grosses crevettes tigrées grillées avec sauce au citron et à l'ail. Servi avec riz et frites)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Caldeirada de peixe</h6><span class="right badge">€33.00</span>
+            <p class="menu-french">Ragoût de poisson</p></div>
+          <div class="hide">(ragoût de poisson, légumes et pommes de terre au vin blanc)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="desserts">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <h3>Desserts</h3>
+        </div>
+    </div>
+      
+    <div class="row menu-container">
+
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Arroz doce</h6><span class="right badge">€4.00</span>
+            <p class="menu-french">Riz au lait</p></div>
+          <div class="hide">(riz au lait portugais saupoudrer avec de la canelle)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Pastel de nata</h6><span class="right badge">€4.00</span>
+            <p class="menu-french">Tarte à la crème portugaise</p></div>
+          <div class="hide">(petite tarte croustillante fourrée à la crème aux oeufs)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Toucinho do céu</h6><span class="right badge">€6.00</span>
+            <p class="menu-french">Lard du ciel</p></div>
+          <div class="hide">(tarte-puding aux oeufs et au sucre)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Pudim Abade de Priscos</h6><span class="right badge">€6.00</span>
+            <p class="menu-french">Pudding "Abade de Priscos"</p></div>
+          <div class="hide">(pudding crémeux au caramel et lard)</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row" id="carteDeVins">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <h3>Carte de vins</h3>
+        </div>
+    </div>
+      
+    <div class="row menu-container">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h5>Vin Blanc</h5></div>
+          <div class="hide"><h6>(Le vin blanc est un vin produit par la fermentation alcoolique du moût des raisins à pulpe non colorée</h6>
+            <h6>et à pellicule blanche ou noire. Il est traité de façon à conserver une couleur jaune transparente au produit final.</h6>
+          </div>
+          
+
+          <div class="col-lg-6">
+            <div class="menu-portuguese">
+              <div class="myDIV"><h6 class="left">Planalto Reserva</h6><span class="right badge">€19.00</span></div>
+              <div class="hide">(2017, Douro)</div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="menu-portuguese">
+              <div class="myDIV"><h6 class="left">Ribeiro Santo, Encruzado</h6><span class="right badge">€23.00</span></div>
+              <div class="hide">(2020, Dão)</div>
+            </div>
+          </div>
+   
+          <div class="col-lg-6">
+            <div class="menu-portuguese">
+              <div class="myDIV"><h6 class="left">Quinta Nova Graina Reserva</h6><span class="right badge">€32.00</span></div>
+              <div class="hide">(2019, Douro)</div>
+            </div>
+          </div>
+      
+          <div class="col-lg-6">
+            <div class="menu-portuguese">
+              <div class="myDIV"><h6 class="left">Quinta do Vallado Reserva</h6><span class="right badge">€40.00</span></div>
+              <div class="hide">(2019, Douro)</div>
+            </div>
+          </div>
+      
+          <div class="col-lg-6">
+            <div class="menu-portuguese">
+              <div class="myDIV"><h6 class="left">Pêra-Manca</h6><span class="right badge">€110.00</span></div>
+              <div class="hide">(2018, Douro)</div>
+            </div>
+          </div>
+
+    </div>
+    
+  <div class="row menu-container">
+      <div class="menu-portuguese">
+        <div class="myDIV"><h5>Vin Vert</h5></div>
+          <div class="hide"><h6>(De la région délimitée des vins "vert", nord-ouest du Portugal.</h6>
+            <h6>Un vin blanc avec une teneur en alcool modérée)</h6></div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="menu-portuguese">
+            <div class="myDIV"><h6 class="left">Soalheiro Alvarinho</h6><span class="right badge">€25.00</span></div>
+            <div class="hide">(2020, Minho)</div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="menu-portuguese">
+            <div class="myDIV"><h6 class="left">Palacio da Brejoeira</h6><span class="right badge">€37.00</span></div>
+            <div class="hide">(2017, Minho)</div>
+          </div>
+        </div>
+
+  </div>
+
+  <div class="row menu-container">
+    <div class="menu-portuguese">
+      <div class="myDIV"><h5>Vin Rouge</h5></div>
+      <div class="hide"><h6>(Un vin rouge est obtenu par la fermentation du moût de raisins noirs en présence de la pellicule, des pépins et éventuellement de la rafle.</h6>
+        <h6>Au Portugal, ils sont fabriqués de manière traditionnelle, sans aucun produit chimique ni autre produit ajouté)</h6></div>
+    </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Quinta dos Avidagos</h6><span class="right badge">€19.00</span></div>
+          <div class="hide">(2017, Douro)</div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Casa de Santar</h6><span class="right badge">€21.00</span></div>
+          <div class="hide">(2019, Dão)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">EA</h6><span class="right badge">€23.00</span></div>
+          <div class="hide">(2017, Alentejo)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Quinta da Romaneira</h6><span class="right badge">€35.00</span></div>
+          <div class="hide">(2012, Douro)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Arrepiado Velho</h6><span class="right badge">€70.00</span></div>
+          <div class="hide">(2016, Alentejo)</div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="menu-portuguese">
+          <div class="myDIV"><h6 class="left">Pêra-Manca</h6><span class="right badge">€600.00</span></div>
+          <div class="hide">(2014, Alentejo)</div>
+        </div>
+      </div>
+
+  </div>
+
+  </div>
+  </section>
+  <footer>
+    <nav class="navbar pt-4 pb-4 navbar-custom navbar-expand-md navbar-dark bg-dark static-top">
+     
+  </nav>
+  </footer>
+</body>
+</html>
