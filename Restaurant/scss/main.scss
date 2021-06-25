@@ -1,5 +1,5 @@
 body {
-background-color: lightblue;
+  background-color: lightblue;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -11,7 +11,6 @@ background-color: lightblue;
   margin-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 h1 {
@@ -26,9 +25,8 @@ h4 {
   font-size: 20px;
 }
 
-p{
-    font-weight: bolder;
-
+p {
+  font-weight: bolder;
 }
 
 .btn {
@@ -46,3 +44,8 @@ p{
   align-items: center;
 }
 
+.navbar-custom {
+  background-image: url(./../css/tilespt.jpg);
+  -webkit-box-shadow: #120e2b 0px 1px 2px 0px, #120e2b 0px 1px 3px 2px;
+  box-shadow: #120e2b 0px 1px 2px 0px, #120e2b 0px 1px 3px 2px;
+}
