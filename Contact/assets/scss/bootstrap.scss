@@ -1,0 +1,194 @@
+/*!
+ * Bootstrap v5.0.1 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
+
+h1 {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+h5 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+h6 {
+    margin-bottom: 1px;
+}
+
+
+.section-title h2{
+    font-size: 25px;
+    margin-top: 2rem;
+}
+
+.menu-ingredients{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+.menu-portuguese a{
+    max-width: 3px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0%;
+    color: gray;
+    margin-bottom: 20px;
+  }
+
+
+  
+.myDIV:hover + .hide {
+    display: block;
+    visibility: visible;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+
+.hidevisible {
+    visibility: visible;
+    opacity: 100%;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.menu-french {
+      font-size: 14px;
+  }
+
+.left{
+    text-align:left;
+    font-size:18px;
+    font-weight:bold;
+    display: inline-block;
+}
+
+.right{
+    font-size:15px;
+    margin-left: 100px;
+    color: black;
+
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    font-size: 45px;
+    text-shadow: 2px 4px 3px rgb(18, 14, 43);
+}
+
+.navbar-nav {
+    margin: 20px 50px 20px 50px;
+}
+
+
+.navigationBar {
+    background-image: url(assets/images/tilespt.jpg);
+    background-position: center;
+    opacity: 0.5;
+}
+
+
+
+.navbar-custom {
+    background-image: url(tilespt.jpg);
+    box-shadow: rgb(18, 14, 43) 0px 1px 2px 0px, rgb(18, 14, 43) 0px 1px 3px 2px;
+}
+
+
+
+.nav-link-custom {
+    font-size: 25px;
+    opacity:100%;
+    text-shadow: 5px 3px 3px rgb(18, 14, 43);
+}
+
+.nav-link-custom:hover {
+    visibility: visible;
+    opacity: 50%;
+    transition: opacity 0.5s;
+}
+
+.nav-item {
+    font-size: 20px;
+    opacity:100%;
+}
+
+body {
+    background-color: #f9f5f0;
+}
+
+footer {
+    margin-top: 150px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .nav-link-custom {
+        margin-left: 50px;
+        
+    }
+}
+.container{
+justify-content: center;}
+
+.formulaire{
+font-weight:bold ;
+
+}

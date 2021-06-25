@@ -1,0 +1,115 @@
+<html>
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+<link rel="stylesheet" href="./assets/scss/bootstrap.css">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/scss/bootstrap.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href=assets/css/bootstrap.css>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function() {
+  $('.template-article img').each(function() {
+      var currentImage = $(this);
+      currentImage.wrap("<a class='image-link' href='" + currentImage.attr("src") + "'</a>");
+  });
+  $('.image-link').magnificPopup({type:'image'});  
+});
+</script>
+
+  </head>
+    <header>
+        <nav class="navbar pt-4 pb-4 navbar-custom navbar-expand-md navbar-dark bg-dark static-top">
+          <a class="navbar-brand" href="#">Portugal</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav ml-auto navbar-nav-custom">
+                  <li class="nav-item">
+                      <a class="nav-link text-white nav-link-custom" href="../Welcome/index.html">Welcome</a>
+                  </li>
+                  <li class="nav-item nav-item-custom">
+                      <a class="nav-link text-white nav-link-custom " href="../restaurant-portugal-menu-main/index.html">Menu</a>
+                  </li>
+                  <li class="nav-item nav-item-custom">
+                    <a class="nav-link text-white nav-link-custom" href="../Galerie/index.html">Galerie</a>
+                </li>  
+                  <li class="nav-item nav-item-custom">
+                      <a class="nav-link text-white nav-link-custom" href="../Restaurant/index.html">Restaurant</a>
+                  </li>  
+                  <li class="nav-item nav-item-custom">
+                      <a class="nav-link text-white nav-link-custom" href="#Contact">Contact</a>
+                  </li>  
+              </ul>
+      </nav>
+      </header>
+      <h1 id="form">Formulaire de contact</h1>
+      <div class="formulaire">
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Envoyer">      
+                  <input type="reset" value="Réinitialiser"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+   </div>
+
+      <footer>
+        <nav class="navbar pt-4 pb-4 navbar-custom navbar-expand-md navbar-dark bg-dark static-top">
+         
+      </nav>
+   </body>
+</html>
